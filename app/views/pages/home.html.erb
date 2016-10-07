@@ -2,3 +2,19 @@
     <h1>Welcome to RapMatch</h1>
     <h3>Your trusted source connecting producers and aspiring guest verse spitters since 2016.</h3>
 </div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Basic Plan Membership</h2>
+            <h4>Sign up for free!</h4>
+            <%= link_to "Sign up Free", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Pro Membership</h2>
+            <h4>Get full access here!</h4>
+            <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+        </div>
+    </div>
+</div>
